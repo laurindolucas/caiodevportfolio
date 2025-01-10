@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #8a0404, #00026b, #006eff, #ffffff);
+    background-size: 200% 300%;
+    animation: color 10s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.title{
+    display: flex;
+    color: white;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    text-align: center;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.descricao{
+    text-align: center;
+    color: white;
+    font-family: "Audiowide", serif;
+    font-size: 20px;
+    font-style: normal;
+    margin: 10px;
+}
+.links_redes{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;    
+    margin: 15px;
+
+}
+
+@media (max-width: 1024px) { 
+    
+    .title { 
+        font-size: 40px; 
+    } 
+    
+    .descricao { 
+        font-size: 18px; 
+    } 
+
+    .links_redes { 
+        font-size: 40px; 
+    } 
+
+    a{
+        margin: 10px;
+    }
+} 
+@media (max-width: 768px) { 
+    .title { 
+        font-size: 30px; 
+    } 
+    .descricao { 
+        font-size: 20px; 
+    } 
+    .links_redes 
+    { 
+        font-size: 40px; 
+    } 
+    a { 
+        margin: 10px; 
+    }
+}
+
+@media (max-width: 480px) { 
+    .title { 
+        font-size: 16px; 
+    } 
+    .descricao { 
+        font-size: 15px; 
+    } 
+    .links_redes { 
+        font-size: 30px; 
+    } 
+    a {
+         margin: 5px
+        } 
+}
+
+@media (max-width: 320px) { 
+    .title {
+        font-size: 25px;
+    }
+    .descricao {
+        font-size: 12px;
+    }
+
+    .links_redes {
+        font-size: 60px;
+    }
+
+    a {
+        margin: 5px;
+    }
+}

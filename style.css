@@ -118,18 +118,7 @@ a{
     } 
     a {
          margin: 5px
-        } 
-    .container{
-    width: 100%;
-    background: linear-gradient(45deg, #8a0404, #00026b, #006eff, #ffffff);
-    background-size: 200% 300%;
-    animation: color 10s ease-in-out infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-
-}
+        }
 }
 
 @media (max-width: 320px) { 

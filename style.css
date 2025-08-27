@@ -1,21 +1,152 @@
-
-*{
+* {
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
-html, body{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+
+.into-page {
+    min-height: 100vh;
+    background: linear-gradient(40deg, #031022, #020a50 ,#00026b);
+    border-bottom: 4px solid white;
 }
 
-.container{
+.portfolio-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140px;
+        font-family: "Audiowide", serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.portfolio-description {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+        font-family: "Audiowide", serif;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.bnt-into {
+    margin-top: 50px;
+    width: 240px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #033e8b80;
+    border: 2px solid white;
+    font-size: 20px;
+    box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.about-me-section {
+    background: var(--gradient);
+    color: #fdfcfd;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010327, #00026b, #002864, #001fac);
+    animation: color 10s ease-in-out infinite;
+    background-size: 200% 300%;
+
+}
+
+.card-about-me {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    padding: 44px 30px 44px 20px;
+    background-color: #2b2928af;
+    border-radius: 24px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 700px;
+    border: 2px solid #ffffff;
+}
+
+.image-about-me {
+    width: 36vw;
+    height: 600px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+    transition: border-radius 0.3s;
+}
+
+.name-about-me {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+
+}
+
+.subtitke-about-me {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.75;
+}
+
+.description-about-me {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+
+
+@media (width <=750px) {
+    .card-about-me {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .name-about-me {
+        margin-right: 0;
+        font-size: 26px;
+    }
+
+    .image-about-me {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+    }
+
+    .description-about-me {
+        max-width: 360px;
+    }
+
+    .socials-about-me {
+        justify-content: center;
+    }
+}
+
+@media (width <=440px) {
+    .image-about-me {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50%;
+        border: 12px solid #272524;
+        margin: -140px 0 30px 0;
+    }
+
+}
+
+.container {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(45deg, #8a0404, #00026b, #006eff, #ffffff);
-    background-size: 200% 300%;
-    animation: color 10s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,18 +155,20 @@ html, body{
 }
 
 @keyframes color {
-    0%{
+    0% {
         background-position: 0 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0 50%;
     }
 }
 
-.title{
+.title {
     display: flex;
     color: white;
     font-family: "Audiowide", serif;
@@ -47,7 +180,7 @@ html, body{
     white-space: nowrap;
 }
 
-.descricao{
+.descricao {
     text-align: center;
     color: white;
     font-family: "Audiowide", serif;
@@ -55,76 +188,85 @@ html, body{
     font-style: normal;
     margin: 10px;
 }
-.links_redes{
+
+.links_redes {
     display: flex;
     font-size: 50px;
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-family: "Audiowide", serif;
     font-weight: 400;
-    font-style: normal;    
+    font-style: normal;
     margin: 15px;
 
 }
 
-@media (max-width: 1024px) { 
-    
-    .title { 
-        font-size: 40px; 
-    } 
-    
-    .descricao { 
-        font-size: 18px; 
-    } 
+@media (max-width: 1024px) {
 
-    .links_redes { 
-        font-size: 40px; 
-    } 
+    .title {
+        font-size: 40px;
+    }
 
-    a{
+    .descricao {
+        font-size: 18px;
+    }
+
+    .links_redes {
+        font-size: 40px;
+    }
+
+    a {
         margin: 10px;
     }
-} 
-@media (max-width: 768px) { 
-    .title { 
-        font-size: 30px; 
-    } 
-    .descricao { 
-        font-size: 20px; 
-    } 
-    .links_redes 
-    { 
-        font-size: 40px; 
-    } 
-    a { 
-        margin: 10px; 
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+    .links_redes {
+        font-size: 40px;
+    }
+
+    a {
+        margin: 10px;
     }
 }
 
-@media (max-width: 480px) { 
-    .title { 
-        font-size: 16px; 
-    } 
-    .descricao { 
-        font-size: 15px; 
-    } 
-    .links_redes { 
-        font-size: 30px; 
-    } 
+@media (max-width: 480px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
+
+    .links_redes {
+        font-size: 30px;
+    }
+
     a {
-         margin: 5px
-        }
+        margin: 5px
+    }
 }
 
-@media (max-width: 320px) { 
+@media (max-width: 320px) {
     .title {
         font-size: 25px;
     }
+
     .descricao {
         font-size: 12px;
     }

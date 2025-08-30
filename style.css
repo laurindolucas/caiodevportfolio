@@ -356,7 +356,7 @@
     font-size: 40px;
 }
 
-.container-hard-skills {
+.container-hard-skills, .container-soft-skills {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -365,7 +365,7 @@
     margin-top: 50px;
 }
 
-.box-hard-skills {
+.box-skills {
     width:auto;
     height: 150px;
     background: #1b1a1d98;
@@ -382,18 +382,40 @@
     text-transform: uppercase;
     transition: ease 0.3s;
 }
-
-.box-hard-skills:hover{
+.box-skills h3 {
+    text-align: center;
+}
+.box-skills:hover{
     border: 1px solid #0077ff;
     background: #12074498;
     transform: scale(0.9);
     color: #0077ff;
 }
 
-.box-hard-skills i {
+.box-skills i {
     font-size: 65px;
 }
+.projects-section{
+        min-height: 100vh;
+    background: linear-gradient(40deg, #031022, #020a50, #00026b);
+}
+.projects-section-title{
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    font-family: "Audiowide", serif;
+    font-size: 60px;
+}
+.container-projects{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    gap: 60px;
+    margin: 0 auto;
+    padding-top: 50px;
 
+}
 @media (width <=750px) {
     .card-about-me {
         margin: 0 40px;

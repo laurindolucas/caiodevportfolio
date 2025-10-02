@@ -45,8 +45,13 @@
 #btn-into-icon {
     margin-right: 10px;
     font-size: 15px;
+    transition: linear all 0.4s;
 }
-
+.bnt-into:hover{
+background-color: #ffffff80;
+  transform: scale(1.05);
+  margin: 0 15px;
+}
 .about-me-section {
     background: var(--gradient);
     color: #fdfcfd;
@@ -380,7 +385,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
     transition: ease 0.3s;
 }
 
@@ -391,7 +395,7 @@
 .box-skills:hover {
     border: 1px solid #0077ff;
     background: #12074498;
-    transform: scale(0.9);
+    transform: scale(0.95);
     color: #0077ff;
 }
 
@@ -569,10 +573,10 @@
 }
 
 .line-contact {
-    width: 70%;
-    height: 5px;
+    width: 50%;
+    height: 2px;
        background: linear-gradient(40deg, #0004f3, #006eff, #0004f3);
-
+    display: flex;
     margin-top: 50px;
 }
 
@@ -587,19 +591,19 @@
      width: 150px;
     height: 150px;
     position: relative;
-    border-radius: 6px;
+    border-radius: 10%;
     font-size: 15px;
     font-family: "Lexend Deca", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+   
     transition: ease 0.3s;
     border: 1px solid #0077ff;
     background: #12074498;
     transform: scale(0.9);
-    color: #0077ff;
+    color: #ffffff;
     cursor: pointer;
 }
 .box-socials i {
@@ -610,7 +614,7 @@
     background-color: #0066ffbb;
     color: #ffffff;
     border-color: rgb(0, 204, 255);
-    transform: scale(1);
+    transform: scale(0.95);
 }
 .footer-text {
     text-align: center;

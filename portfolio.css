@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #01276d;
+    color: aliceblue;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    padding-top: 160px;
+    align-items: flex-start;
+}
+
+.projects-section,
+.academic-section,
+.about-me-section,
+.skills-section, .contact-section, .socials-section {
+    padding-bottom: 100px;
+}
+
+.card {
+    position: fixed;
+    top: 160px;
+    height: 640px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+
+.content-main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 400px;
+}
+
+
+.image-about-me {
+    height: 284px;
+    width: 240px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.name-about-me {
+    margin-top: 20px;
+    font-size: 35px;
+    color: #1e69f3;
+    text-transform: uppercase;
+}
+
+
+.socials-about-me {
+    display: flex;
+    gap: 15px;
+}
+
+.instagram-button,
+.Linkedln-button,
+.github-button {
+    text-decoration: none;
+    color: #0077ff;
+    font-size: 30px;
+    transition: 0.3s linear;
+}
+
+.instagram-button:hover,
+.Linkedln-button:hover,
+.github-button:hover {
+    color: #003b7e;
+    transform: scale(1.04);
+}
+
+
+.title {
+    color: #ffffff;
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: #ffffffd3;
+}
+
+.card-academic {
+    background-color: #ffffff00;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-academic:hover {
+    background-color: #ffffff27;
+}
+
+.academic-title {
+    text-transform: uppercase;
+    font-size: 25px;
+
+}
+
+.academic-description {
+    margin: 5px;
+}
+
+.academic-rodape {
+    font-size: 20px;
+    margin: 5px;
+    color: #ffffffd3;
+}
+
+.card-project {
+    cursor: pointer;
+    background-color: #ffffff00;
+    width: 100%;
+    height: 170px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-project:hover {
+    background-color: #ffffff27;
+}
+
+.infos-project {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.project-img {
+    height: 130px;
+    width: 134px;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
+#seta {
+    display: inline-block;
+    transform: rotate(-45deg);
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.card-project:hover #seta {
+    transform: rotate(-45deg) translateX(5px) scale(1.15);
+}
+
+.text-project {
+    margin: 10px;
+}
+
+.project-description {
+    color: #ffffff91;
+}
+
+
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.container-skills h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.container-front,
+.container-back,
+.container-outhers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-back,
+.content-outhers,
+.content-front {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.card-skills {
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 200px;
+    transition: 0.3s ease;
+    cursor: default;
+
+}
+
+
+.card-skills:hover {
+    transform: translateY(-2px);
+
+}
+
+
+.card-skills i {
+    font-size: 36px;
+    color: #1e69f3;
+    background: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-skills h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.card-skills {
+    display: flex;
+    gap: 10px;
+}
+
+.fade-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.form-header{
+    display: flex;
+    gap: 20px;
+}
+.contact-section h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-section textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.contact-section textarea:focus, .contact-section input:focus {
+  outline: 2px solid #3498db; 
+  outline-offset: 2px; 
+}
+.contact-section button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #1e69f3;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #001e57;
+    color: #fff;
+}
+.socials-container-icons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding-top: 40px;
+}
+.box-socials{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    border-radius: 10%;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.3s;
+    background: #12074498;
+    transform: scale(0.9);
+    color: #ffffff;
+    cursor: pointer;
+}
+.box-socials i {
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.box-socials:hover{
+    background-color: #ffffff27;
+    color:#ffffff;
+    border-color: rgb(0, 204, 255);
+    transform: scale(0.93);
+}

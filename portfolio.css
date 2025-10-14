@@ -11,21 +11,121 @@ body {
     color: aliceblue;
 }
 
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #001e57; /* azul escuro do teu tema */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease; /* animação de saída */
+}
 
+.loading-title {
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.loading-subtitle {
+  font-size: 24px;
+  opacity: 0.8;
+  margin-top: 10px;
+  animation: fadeUp 2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Quando o loading sair */
+#loading-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     gap: 20px;
-    padding-top: 160px;
+    padding-top: 60px;
     align-items: flex-start;
+}
+
+.icon-navbar {
+    background: #ffffff;
+    padding: 12px 25px;
+    border-radius: 20px;
+    display: flex;
+    gap: 35px;
+    box-shadow: 0 5px 20px rgba(23, 0, 128, 0.3);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.nav-item {
+    position: relative;
+    color: #1e69f3;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item .tooltip {
+    position: absolute;
+    bottom: -35px;
+    background: #1e69f3;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-item:hover i {
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
 .projects-section,
 .academic-section,
 .about-me-section,
-.skills-section, .contact-section, .socials-section {
+.skills-section,
+.socials-section {
     padding-bottom: 100px;
+}
+
+.contact-section {
+    padding-bottom: 50px;
 }
 
 .card {
@@ -60,18 +160,34 @@ body {
 .name-about-me {
     margin-top: 20px;
     font-size: 35px;
+    font-weight: 700;
     color: #1e69f3;
     text-transform: uppercase;
 }
 
+.subtitle-about-me {
+    font-size: 15px;
+    color: #1e68f3d2;
+    margin-bottom: 10px;
+}
+
+.description-about-me {
+    color: #555;
+    margin: 10px 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
+}
 
 .socials-about-me {
+
     display: flex;
     gap: 15px;
 }
 
 .instagram-button,
-.Linkedln-button,
+.linkedin-button,
 .github-button {
     text-decoration: none;
     color: #0077ff;
@@ -94,8 +210,40 @@ body {
     margin-bottom: 20px;
 }
 
+.title-social {
+    font-size: 35px;
+}
+
 .title span {
     color: #ffffffd3;
+}
+
+.description-about-me-secetion {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.cta-call {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.btn-cv:hover, .btn-git:hover {
+    background-color: #ffffff71;
+    transform: scale(1.03);
+    color: #ffffff;
+}
+.btn-git,
+.btn-cv {
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: #1e69f3;
+    cursor: pointer;
+ transition: 0.3s ease-in-out;
 }
 
 .card-academic {
@@ -268,10 +416,12 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-.form-header{
+
+.form-header {
     display: flex;
     gap: 20px;
 }
+
 .contact-section h2 {
     color: #fff;
     text-align: center;
@@ -299,10 +449,13 @@ body {
     resize: vertical;
     min-height: 100px;
 }
-.contact-section textarea:focus, .contact-section input:focus {
-  outline: 2px solid #3498db; 
-  outline-offset: 2px; 
+
+.contact-section textarea:focus,
+.contact-section input:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
 }
+
 .contact-section button {
     width: 100%;
     padding: 15px;
@@ -320,14 +473,16 @@ body {
     background-color: #001e57;
     color: #fff;
 }
-.socials-container-icons{
+
+.socials-container-icons {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 15px;
     padding-top: 40px;
 }
-.box-socials{
+
+.box-socials {
     width: 120px;
     height: 150px;
     position: relative;
@@ -339,19 +494,19 @@ body {
     align-items: center;
     justify-content: center;
     transition: ease 0.3s;
-    background: #12074498;
+    background: #ffffff;
     transform: scale(0.9);
-    color: #ffffff;
+    color: #1e69f3;
     cursor: pointer;
 }
+
 .box-socials i {
     font-size: 70px;
-    color: #ffffff;
+    color: #1e69f3;
 }
 
-.box-socials:hover{
-    background-color: #ffffff27;
-    color:#ffffff;
+.box-socials:hover {
+    background-color: #ffffff71;
     border-color: rgb(0, 204, 255);
     transform: scale(0.93);
 }

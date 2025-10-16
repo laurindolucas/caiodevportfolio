@@ -6,7 +6,7 @@ const projects = [
       "Um sistema completo de gerenciamento de tarefas desenvolvido com as tecnologias mais modernas do mercado. O projeto permite criar, editar e organizar tarefas de forma intuitiva, com recursos avançados como filtros, categorias, prioridades e colaboração em tempo real. A interface foi cuidadosamente projetada para proporcionar a melhor experiência ao usuário, com animações suaves e design responsivo que funciona perfeitamente em qualquer dispositivo.",
     technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "MongoDB"],
     date: { month: "Janeiro", year: "2024" },
-    videoUrl: "/videos/gerenciador_tarefas.mp4",
+    videoUrl: "/assets/demonstraçãoMGT.mp4",
     deployUrl: "https://gerenciador-tarefas.com",
     githubUrl: "https://github.com/usuario/gerenciador-tarefas"
   },
@@ -16,7 +16,7 @@ const projects = [
       "Uma plataforma de e-commerce moderna com sistema de recomendação inteligente, carrinho persistente, autenticação segura e painel administrativo completo para gestão de produtos, pedidos e usuários. O design é totalmente responsivo e focado em conversão, com animações suaves e performance otimizada.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "Stripe API"],
     date: { month: "Agosto", year: "2024" },
-    videoUrl: "/videos/ecommerce.mp4",
+    videoUrl: "/assets/demostraçãoToDo.mp4",
     deployUrl: "https://ecommerce-inteligente.com",
     githubUrl: "https://github.com/usuario/ecommerce-inteligente"
   },
@@ -26,7 +26,7 @@ const projects = [
       "Um dashboard interativo para análise de dados financeiros em tempo real, com gráficos dinâmicos, filtros avançados, exportação de relatórios e integração com APIs externas. A interface foi projetada para oferecer visualização clara e intuitiva de métricas importantes, facilitando a tomada de decisão por gestores.",
     technologies: ["Vue.js", "Chart.js", "Sass", "Firebase", "REST API"],
     date: { month: "Março", year: "2025" },
-    videoUrl: "/videos/dashboard_financeiro.mp4",
+    videoUrl: "/assets/1016.mp4",
     deployUrl: "https://dashboard-financeiro.com",
     githubUrl: "https://github.com/usuario/dashboard-financeiro"
   }

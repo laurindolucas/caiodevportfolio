@@ -20,7 +20,7 @@
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
@@ -115,60 +115,63 @@
                         </p>
                         <div class="cta-call">
                             <button class="btn-cv" id="btn-cv">Baixar Currículo</button>
-                            <button class="btn-git">Visualizar github</button>
+                            <button class="btn-git" onclick="abrirRedeSocial('https://github.com/laurindolucas')"">Visualizar github</button>
                         </div>
                     </section>
-                    <section class="projects-section">
-                        <h1 class="title fade-element">Projetos <br> <span>Recentes</span></h1>
-                        <div class="projects">
-                            <div class="card-project fade-element">
-                                <div class="infos-project">
-                                    <img src="/assets/mgt.png" alt="" class="project-img">
-                                    <div class="text-project">
-                                        <h3 class="project-title">MGT- Empresa Alemã</h3>
-                                        <p class="project-description">Criação de um site front-end profissional do zero
-                                            para
-                                            uma empresa alemã</p>
+                    <section class=" projects-section">
+                                <h1 class="title fade-element">Projetos <br> <span>Recentes</span></h1>
+                                <div class="projects">
+                                    <div class="card-project fade-element" data-index="0">
+                                        <div class="infos-project">
+                                            <img src="/assets/mgt.png" alt="" class="project-img">
+                                            <div class="text-project">
+                                                <h3 class="project-title1">MGT- Empresa Alemã</h3>
+                                                <p class="project-description">Criação de um site front-end profissional
+                                                    do zero
+                                                    para
+                                                    uma empresa alemã</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="cta-project">
+                                            <i class="fi fi-rr-arrow-small-right" id="seta"></i>
+                                        </div>
                                     </div>
 
-                                </div>
-                                <div class="cta-project">
-                                    <i class="fi fi-rr-arrow-small-right" id="seta"></i>
-                                </div>
-                            </div>
+                                    <div class="card-project fade-element" data-index="1">
+                                        <div class="infos-project">
+                                            <img src="/assets/mgt.png" alt="" class="project-img">
+                                            <div class="text-project">
+                                                <h3 class="project-title1">MGT- Empresa Alemã</h3>
+                                                <p class="project-description">Criação de um site front-end profissional
+                                                    do zero
+                                                    para
+                                                    uma empresa alemã</p>
+                                            </div>
 
-                            <div class="card-project fade-element">
-                                <div class="infos-project">
-                                    <img src="/assets/mgt.png" alt="" class="project-img">
-                                    <div class="text-project">
-                                        <h3 class="project-title">MGT- Empresa Alemã</h3>
-                                        <p class="project-description">Criação de um site front-end profissional do zero
-                                            para
-                                            uma empresa alemã</p>
+                                        </div>
+                                        <div class="cta-project">
+                                            <i class="fi fi-rr-arrow-small-right" id="seta"></i>
+                                        </div>
                                     </div>
 
-                                </div>
-                                <div class="cta-project">
-                                    <i class="fi fi-rr-arrow-small-right" id="seta"></i>
-                                </div>
-                            </div>
+                                    <div class="card-project fade-element " data-index="2">
+                                        <div class="infos-project">
+                                            <img src="/assets/mgt.png" alt="" class="project-img">
+                                            <div class="text-project">
+                                                <h3 class="project-title1">MGT- Empresa Alemã</h3>
+                                                <p class="project-description">Criação de um site front-end profissional
+                                                    do zero
+                                                    para
+                                                    uma empresa alemã</p>
+                                            </div>
 
-                            <div class="card-project fade-element">
-                                <div class="infos-project">
-                                    <img src="/assets/mgt.png" alt="" class="project-img">
-                                    <div class="text-project">
-                                        <h3 class="project-title">MGT- Empresa Alemã</h3>
-                                        <p class="project-description">Criação de um site front-end profissional do zero
-                                            para
-                                            uma empresa alemã</p>
+                                        </div>
+                                        <div class="cta-project">
+                                            <i class="fi fi-rr-arrow-small-right" id="seta"></i>
+                                        </div>
                                     </div>
-
                                 </div>
-                                <div class="cta-project">
-                                    <i class="fi fi-rr-arrow-small-right" id="seta"></i>
-                                </div>
-                            </div>
-                        </div>
 
                     </section>
 
@@ -288,12 +291,13 @@
 
                     <section class="contact-section">
                         <h1 class="title fade-element">Entre em <br> <span>contato</span></h1>
-                        <form class="fade-element">
-                            <div class="form-header "><input type="text" placeholder="Seu Nome" required>
-                                <input type="email" placeholder="Seu Email" required>
+                        <form class="fade-element" id="meuForm">
+                            <div class="form-header "><input type="text" placeholder="Seu Nome" name="user_name"
+                                    required>
+                                <input type="email" placeholder="Seu Email" name="user_email" required>
                             </div>
 
-                            <textarea placeholder="Mensagem" required></textarea>
+                            <textarea placeholder="Mensagem" name="message" required></textarea>
                             <button type="submit">Enviar</button>
                         </form>
                     </section>
@@ -302,15 +306,18 @@
                         <div class="socials-container fade-element">
                             <h3 class="socials-title">Onde você pode me encontrar</h3>
                             <div class="socials-container-icons">
-                                <div class="box-socials" onclick="abrirRedeSocial('https://www.instagram.com/laurindo.dev/')">
+                                <div class="box-socials"
+                                    onclick="abrirRedeSocial('https://www.instagram.com/laurindo.dev/')">
                                     <i class="fi fi-brands-instagram"></i>
                                     <h3>Instagram</h3>
                                 </div>
-                                <div class="box-socials" onclick="abrirRedeSocial('https://www.tiktok.com/@laurindodev?is_from_webapp=1&sender_device=pc')">
+                                <div class="box-socials"
+                                    onclick="abrirRedeSocial('https://www.tiktok.com/@laurindodev?is_from_webapp=1&sender_device=pc')">
                                     <i class="fi fi-brands-tik-tok"></i>
                                     <h3>tik tok</h3>
                                 </div>
-                                <div class="box-socials" onclick="abrirRedeSocial('https://www.youtube.com/@caiolucass99')">
+                                <div class="box-socials"
+                                    onclick="abrirRedeSocial('https://www.youtube.com/@caiolucass99')">
                                     <i class="fi fi-brands-youtube"></i>
                                     <h3>youtube</h3>
                                 </div>
@@ -318,7 +325,8 @@
                                     <i class="fi fi-brands-github"></i>
                                     <h3>github</h3>
                                 </div>
-                                <div class="box-socials" onclick="abrirRedeSocial('https://www.linkedin.com/in/caio-laurindo-4b676b31b/')">
+                                <div class="box-socials"
+                                    onclick="abrirRedeSocial('https://www.linkedin.com/in/caio-laurindo-4b676b31b/')">
                                     <i class="fi fi-brands-linkedin"></i>
                                     <h3>linkedin</h3>
                                 </div>
@@ -336,7 +344,107 @@
         </div>
 
     </div>
+    <div id="projectModal" class="modal" aria-hidden="true">
+        <!-- Backdrop -->
+        <div class="modal-backdrop"></div>
+
+        <!-- Container do Modal -->
+        <div class="modal-container">
+            <!-- Header com Botão de Voltar -->
+            <div class="modal-header">
+                <button id="backBtn" class="btn-back">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    <span>Voltar</span>
+                </button>
+
+                <button id="closeBtn" class="btn-close" aria-label="Fechar">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="modal-content">
+                <!-- Seção Superior: Vídeo e Info -->
+                <div class="top-section">
+                    <!-- Vídeo -->
+                    <div class="video-container">
+                        <video id="projectVideo" controls poster="/placeholder.svg">
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="info-section">
+                        <!-- Título -->
+                        <h2 id="projectTitle" class="project-title"></h2>
+
+                        <!-- Tecnologias -->
+                        <div class="tech-section">
+                            <h3 class="section-label">Tecnologias</h3>
+                            <div id="techContainer" class="tech-grid">
+                                <div class="tech-card"></div>
+                                <div class="tech-card"></div>
+                                <div class="tech-card"></div>
+                                <div class="tech-card"></div>
+                                <div class="tech-card"></div>
+                                <div class="tech-card"></div>
+                            </div>
+                        </div>
+
+                        <!-- Botões de Ação -->
+                        <div class="action-buttons">
+                            <a id="deployBtn" href="https://exemplo.com/deploy" target="_blank"
+                                rel="noopener noreferrer" class="btn-deploy">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                                </svg>
+                                Ver Deploy
+                            </a>
+                            <a id="githubBtn" href="https://github.com/usuario/projeto" target="_blank"
+                                rel="noopener noreferrer" class="btn-github">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Descrição -->
+                <div class="description-section">
+                    <h3 class="section-label">Sobre o Projeto</h3>
+                    <p id="projectDescription" class="description-text">
+                      
+                    </p>
+                </div>
+
+                <!-- Data -->
+                <div class="date-section">
+                    <p class="date-text">
+                        Desenvolvido em <span id="projectDate" class="date-highlight"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="modal-script.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>

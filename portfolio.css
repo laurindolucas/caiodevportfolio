@@ -423,7 +423,7 @@ body {
 }
 
 .contact-section h2 {
-    color: #fff;
+    color: #000000;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -436,7 +436,7 @@ body {
     border: none;
     border-radius: 8px;
     background-color: #ffffff;
-    color: #fff;
+    color: #000000;
     font-size: 14px;
 }
 
@@ -510,3 +510,4 @@ body {
     border-color: rgb(0, 204, 255);
     transform: scale(0.93);
 }
+

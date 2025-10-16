@@ -72,3 +72,5 @@ fadeElements.forEach(el => observer.observe(el));
     function abrirRedeSocial(url) {
       window.open(url, '_blank'); 
     }
+
+

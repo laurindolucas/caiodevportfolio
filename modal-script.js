@@ -3,32 +3,30 @@ const projects = [
   {
     title: "Sistema de Gerenciamento de Tarefas",
     description:
-      "Um sistemade gerenciamento de tarefas desenvolvido com as tecnologias mais modernas do mercado. O projeto permite criar, editar e deletar as tarefas, também pode acompanhar a quantidade de tarefas feitas e seu total, foi um projeto da trilha de React que é parceria da Rocketseat e o Porto Digital",
+      "Um sistema de gerenciamento de tarefas desenvolvido com as tecnologias mais modernas do mercado. O projeto permite criar, editar e deletar as tarefas, também pode acompanhar a quantidade de tarefas feitas e seu total, foi um projeto da trilha de React que é parceria da Rocketseat e o Porto Digital",
     technologies: ["HTML", "CSS", "TypeScript", "React.js", "TailwindCss"],
     date: { month: "setembro", year: "2025" },
     videoUrl: "/assets/demostraçãoToDo.mp4",
-    deployUrl: "https://gerenciador-tarefas.com",
-    githubUrl: "https://github.com/usuario/gerenciador-tarefas"
+    githubUrl: "https://github.com/laurindolucas/React-trilha-porto-digital-rocketseat/tree/main/todo"
   },
   {
     title: "MGT- WEBSITE",
     description:
-      "Uma plataforma de e-commerce moderna com sistema de recomendação inteligente, carrinho persistente, autenticação segura e painel administrativo completo para gestão de produtos, pedidos e usuários. O design é totalmente responsivo e focado em conversão, com animações suaves e performance otimizada.",
+      "Site corporativo desenvolvido do zero para uma empresa alemã, com design moderno, responsivo e foco total na experiência do usuário. Apresenta informações institucionais, serviços oferecidos e parceiros estratégicos, além de um canal direto de contato. Construído inteiramente em front-end, com navegação intuitiva e identidade visual profissional.",
     technologies: ["HTML", "CSS", "JavaScript"],
     date: { month: "Agosto", year: "2025" },
     videoUrl: "/assets/demonstraçãoMGT.mp4",
-    deployUrl: "https://ecommerce-inteligente.com",
-    githubUrl: "https://github.com/usuario/ecommerce-inteligente"
+    deployUrl: "https://mgt-azure.vercel.app/index.html",
+    githubUrl: "https://github.com/laurindolucas/MGT-WEBSITE"
   },
   {
-    title: "Dashboard de Análise Financeira em Tempo Real",
+    title: "Crítico de sofá - plataforma de reviews",
     description:
-      "Um dashboard interativo para análise de dados financeiros em tempo real, com gráficos dinâmicos, filtros avançados, exportação de relatórios e integração com APIs externas. A interface foi projetada para oferecer visualização clara e intuitiva de métricas importantes, facilitando a tomada de decisão por gestores.",
-    technologies: ["Vue.js", "Chart.js", "Sass", "Firebase", "REST API"],
-    date: { month: "Março", year: "2025" },
+      "Crítico de Sofá é uma adaptação de um projeto desenvolvido durante um curso de PHP. Trata-se de uma aplicação full stack, totalmente integrada a um banco de dados relacional, onde o usuário pode criar uma conta, avaliar filmes com estrelas e comentários, além de cadastrar seus próprios filmes com pôsteres personalizados. A plataforma conta com uma dashboard para visualizar e gerenciar todos os filmes adicionados, e oferece ao usuário a possibilidade de editar completamente seu perfil, garantindo uma experiência prática, dinâmica e personalizada.",
+    technologies: ["PHP", "HTML", "CSS", "MYSQL"],
+    date: { month: "Agosto", year: "2025" },
     videoUrl: "/assets/1016.mp4",
-    deployUrl: "https://dashboard-financeiro.com",
-    githubUrl: "https://github.com/usuario/dashboard-financeiro"
+    githubUrl: "https://github.com/laurindolucas/CriticoDeSofa"
   }
 ];
 

@@ -12,53 +12,57 @@ body {
 }
 
 #loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #001e57; /* azul escuro do teu tema */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  opacity: 1;
-  transition: opacity 1s ease; /* animação de saída */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001e57;
+    /* azul escuro do teu tema */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 1s ease;
+    /* animação de saída */
 }
 
 .loading-title {
-  font-size: 70px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  animation: fadeUp 1.5s ease forwards;
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: fadeUp 1.5s ease forwards;
 }
 
 .loading-subtitle {
-  font-size: 24px;
-  opacity: 0.8;
-  margin-top: 10px;
-  animation: fadeUp 2s ease forwards;
+    font-size: 24px;
+    opacity: 0.8;
+    margin-top: 10px;
+    animation: fadeUp 2s ease forwards;
 }
 
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Quando o loading sair */
 #loading-screen.fade-out {
-  opacity: 0;
-  pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -172,6 +176,7 @@ body {
 }
 
 .description-about-me {
+    padding-top: 30px;
     color: #555;
     margin: 10px 0 20px;
     font-size: 15px;
@@ -229,11 +234,14 @@ body {
     gap: 20px;
     padding: 20px;
 }
-.btn-cv:hover, .btn-git:hover {
+
+.btn-cv:hover,
+.btn-git:hover {
     background-color: #ffffff71;
     transform: scale(1.03);
     color: #ffffff;
 }
+
 .btn-git,
 .btn-cv {
     width: 50%;
@@ -243,7 +251,7 @@ body {
     font-size: 20px;
     color: #1e69f3;
     cursor: pointer;
- transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .card-academic {
@@ -511,3 +519,521 @@ body {
     transform: scale(0.93);
 }
 
+/* ==================== TABLET - 768px ==================== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 0;
+        align-items: center;
+    }
+
+    .card {
+        position: static;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto 40px;
+        padding: 30px 20px;
+    }
+
+    .content-main {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .icon-navbar {
+        width: 100%;
+        max-width: 350px;
+        gap: 20px;
+        padding: 12px 20px;
+        margin: 20px auto 0;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .description-about-me-secetion {
+        font-size: 15px;
+        padding-left: 0;
+    }
+
+    .cta-call {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-cv,
+    .btn-git {
+        width: 100%;
+    }
+
+    .card-project {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .projects-section,
+    .academic-section,
+    .about-me-section,
+    .skills-section,
+    .socials-section {
+        padding-bottom: 60px;
+    }
+
+    .card-academic {
+        padding: 20px;
+    }
+
+    .content-front,
+    .content-back,
+    .content-outhers {
+        flex-wrap: wrap;
+    }
+
+    .card-skills {
+        min-width: 160px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        font-size: 16px;
+    }
+
+    .form-header {
+        flex-direction: column;
+    }
+
+    .form-header input {
+        margin-bottom: 15px;
+    }
+
+    .socials-container-icons {
+        flex-wrap: wrap;
+    }
+
+    .box-socials {
+        width: 100px;
+        height: 130px;
+        font-size: 12px;
+    }
+
+    .box-socials i {
+        font-size: 50px;
+    }
+}
+
+/* ==================== MOBILE - 600px ==================== */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding-top: 90px;
+    }
+
+    .card {
+        width: 85%;
+        max-width: 100%;
+        padding: 25px 15px;
+        margin: 0 auto 30px;
+    }
+
+    .content-main {
+        padding: 15px;
+    }
+
+    .icon-navbar {
+        width: 90%;
+        gap: 15px;
+        padding: 10px 15px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .nav-item .tooltip {
+        font-size: 10px;
+    }
+
+    .image-about-me {
+        height: 220px;
+        width: 190px;
+    }
+
+    .name-about-me {
+        font-size: 26px;
+        margin-top: 15px;
+    }
+
+    .subtitle-about-me {
+        font-size: 13px;
+    }
+
+    .description-about-me {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+
+    .socials-about-me {
+        gap: 12px;
+    }
+
+    .instagram-button,
+    .linkedin-button,
+    .github-button {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .description-about-me-secetion {
+        font-size: 14px;
+    }
+
+    .cta-call {
+        padding: 15px 0;
+        margin-top: 15px;
+    }
+
+    .btn-cv,
+    .btn-git {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .card-project {
+        height: auto;
+        padding: 15px;
+    }
+
+    .project-img {
+        height: 150px;
+        width: 100%;
+    }
+
+    .text-project {
+        margin: 10px 0 0 0;
+    }
+
+    .project-title1 {
+        font-size: 15px;
+    }
+
+    .project-description {
+        font-size: 12px;
+    }
+
+    .card-academic {
+        padding: 15px;
+    }
+
+    .academic-title {
+        font-size: 20px;
+    }
+
+    .academic-description {
+        font-size: 13px;
+    }
+
+    .academic-rodape {
+        font-size: 12px;
+    }
+
+    .container-skills h2 {
+        font-size: 18px;
+    }
+
+    .card-skills {
+        min-width: 140px;
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .card-skills i {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        padding: 12px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .contact-section button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .title-social {
+        font-size: 30px;
+    }
+
+    .socials-container-icons {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .box-socials {
+        width: 85px;
+        height: 110px;
+        font-size: 11px;
+        transform: scale(0.9);
+    }
+
+    .box-socials i {
+        font-size: 45px;
+    }
+}
+
+/* ==================== MOBILE PEQUENO - 480px ==================== */
+@media (max-width: 480px) {
+    .container {
+        padding-top: 80px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px 12px;
+    }
+
+    .content-main {
+        padding: 12px;
+    }
+
+    .icon-navbar {
+        width: 95%;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .description-about-me-secetion {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .image-about-me {
+        height: 180px;
+        width: 160px;
+    }
+
+    .name-about-me {
+        font-size: 22px;
+    }
+
+    .cta-call {
+        gap: 8px;
+    }
+
+    .btn-cv,
+    .btn-git {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .card-project {
+        padding: 12px;
+    }
+
+    .project-img {
+        width: 60px;
+        height: 60px;
+        padding-right: 5px;
+    }
+
+    .card-skills {
+        min-width: 120px;
+        padding: 10px 12px;
+    }
+
+    .card-skills i {
+        font-size: 24px;
+    }
+
+    .card-skills h3 {
+        font-size: 12px;
+    }
+
+    .box-socials {
+        width: 75px;
+        height: 100px;
+        font-size: 10px;
+    }
+    #seta{
+        opacity: 0;
+    }
+    .box-socials i {
+        font-size: 40px;
+    }
+
+    .loading-title {
+        font-size: 40px;
+    }
+
+    .loading-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* ==================== MOBILE ULTRA PEQUENO - 360px ==================== */
+@media (max-width: 360px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .description-about-me-secetion {
+        font-size: 12px;
+    }
+
+    .name-about-me {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 15px 10px;
+    }
+
+    .icon-navbar {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-item {
+        font-size: 12px;
+    }
+
+    .cta-call {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn-cv,
+    .btn-git {
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .card-skills {
+        min-width: 100px;
+        padding: 8px 10px;
+    }
+
+    .card-skills i {
+        font-size: 20px;
+        padding: 6px;
+    }
+}
+
+/* ==================== LANDSCAPE ==================== */
+@media (max-height: 500px) and (max-width: 900px) {
+    .card {
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .image-about-me {
+        height: 120px;
+        width: 110px;
+    }
+
+    .name-about-me {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .description-about-me {
+        display: none;
+    }
+
+    .socials-about-me {
+        gap: 8px;
+    }
+
+    .icon-navbar {
+        margin-top: 5px;
+
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .cta-call {
+        margin-top: 8px;
+        gap: 8px;
+    }
+
+    .btn-cv,
+    .btn-git {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .projects-section,
+    .academic-section,
+    .about-me-section,
+    .skills-section,
+    .socials-section {
+        padding-bottom: 30px;
+    }
+}
+
+/* ==================== DESKTOP PEQUENO - 1024px ==================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .card {
+        width: 350px;
+        height: 600px;
+        padding: 25px 18px;
+    }
+
+    .content-main {
+        margin-left: 350px;
+    }
+
+    .icon-navbar {
+        width: 280px;
+    }
+
+    .title {
+        font-size: 55px;
+    }
+
+    .card-project {
+        height: 140px;
+    }
+
+    .project-img {
+        height: 120px;
+        width: 120px;
+    }
+}

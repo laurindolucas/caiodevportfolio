@@ -3,20 +3,20 @@ const projects = [
   {
     title: "Sistema de Gerenciamento de Tarefas",
     description:
-      "Um sistema completo de gerenciamento de tarefas desenvolvido com as tecnologias mais modernas do mercado. O projeto permite criar, editar e organizar tarefas de forma intuitiva, com recursos avançados como filtros, categorias, prioridades e colaboração em tempo real. A interface foi cuidadosamente projetada para proporcionar a melhor experiência ao usuário, com animações suaves e design responsivo que funciona perfeitamente em qualquer dispositivo.",
-    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "MongoDB"],
-    date: { month: "Janeiro", year: "2024" },
-    videoUrl: "/assets/demonstraçãoMGT.mp4",
+      "Um sistemade gerenciamento de tarefas desenvolvido com as tecnologias mais modernas do mercado. O projeto permite criar, editar e deletar as tarefas, também pode acompanhar a quantidade de tarefas feitas e seu total, foi um projeto da trilha de React que é parceria da Rocketseat e o Porto Digital",
+    technologies: ["HTML", "CSS", "TypeScript", "React.js", "TailwindCss"],
+    date: { month: "setembro", year: "2025" },
+    videoUrl: "/assets/demostraçãoToDo.mp4",
     deployUrl: "https://gerenciador-tarefas.com",
     githubUrl: "https://github.com/usuario/gerenciador-tarefas"
   },
   {
-    title: "Plataforma de E-commerce Inteligente",
+    title: "MGT- WEBSITE",
     description:
       "Uma plataforma de e-commerce moderna com sistema de recomendação inteligente, carrinho persistente, autenticação segura e painel administrativo completo para gestão de produtos, pedidos e usuários. O design é totalmente responsivo e focado em conversão, com animações suaves e performance otimizada.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "Stripe API"],
-    date: { month: "Agosto", year: "2024" },
-    videoUrl: "/assets/demostraçãoToDo.mp4",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    date: { month: "Agosto", year: "2025" },
+    videoUrl: "/assets/demonstraçãoMGT.mp4",
     deployUrl: "https://ecommerce-inteligente.com",
     githubUrl: "https://github.com/usuario/ecommerce-inteligente"
   },

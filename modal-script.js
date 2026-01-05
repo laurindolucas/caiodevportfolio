@@ -27,6 +27,36 @@ const projects = [
     date: { month: "Agosto", year: "2025" },
     videoUrl: "/assets/1016.mp4",
     githubUrl: "https://github.com/laurindolucas/CriticoDeSofa"
+  },
+    {
+    title: "Lotus - plataforma de apoio as mulheres",
+    description:
+      "Lotus é um projeto desenvolvido durante a Residência Tecnológica do Porto Digital. Trata-se de uma plataforma criada para apoiar mulheres que convivem com a endometriose no Brasil, oferecendo ferramentas que auxiliam no acompanhamento do tratamento, no acesso à informação e no fortalecimento da rede de apoio durante toda a jornada de cuidado.",
+    technologies: ["REACT", "TYPESCRIPT", "SUPABASE", "LOVABLE"],
+    date: { month: "Novembro", year: "2025" },
+    videoUrl: "/assets/1016.mp4",
+    deployUrl: "https://mgt-azure.vercel.app/index.html",
+    githubUrl: "https://github.com/laurindolucas/lotus"
+  },
+    {
+    title: "Sulamitta Lima - LandingPage Profissional",
+    description:
+      "Crítico de Sofá é uma adaptação de um projeto desenvolvido durante um curso de PHP. Trata-se de uma aplicação full stack, totalmente integrada a um banco de dados relacional, onde o usuário pode criar uma conta, avaliar filmes com estrelas e comentários, além de cadastrar seus próprios filmes com pôsteres personalizados. A plataforma conta com uma dashboard para visualizar e gerenciar todos os filmes adicionados, e oferece ao usuário a possibilidade de editar completamente seu perfil, garantindo uma experiência prática, dinâmica e personalizada.",
+    technologies: ["JAVASCRIPT", "HTML", "CSS"],
+    date: { month: "Dezembro", year: "2025" },
+    videoUrl: "/assets/1016.mp4",
+    deployUrl: "https://sulamittalima.vercel.app/",
+    githubUrl: "https://github.com/laurindolucas/Sulamita-Lima-Landing-Page"
+  },
+    {
+    title: "Busca Clima - plataforma de clima e localização",
+    description:
+      "Busca Clima foi o projeto final do curso de Full Stack da Infinity School. A aplicação consome duas APIs: uma responsável por obter os dados de localização a partir do CEP informado e outra que, com base nesse CEP, fornece informações sobre o clima da região. A plataforma permite o histórico de buscas realizadas pelo usuário, além da funcionalidade de favoritar locais para acompanhamento rápido das condições climáticas.",
+    technologies: ["JAVASCRIPT", "HTML", "CSS", "VIACEP-API", "WEATHER-API"],
+    date: { month: "Julho", year: "2025" },
+    videoUrl: "/assets/1016.mp4",
+    deployUrl: "https://busca-tempo-eight.vercel.app/",
+    githubUrl: "https://github.com/laurindolucas/BuscaTempo-"
   }
 ];
 

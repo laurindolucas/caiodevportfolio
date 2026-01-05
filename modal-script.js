@@ -41,7 +41,7 @@ const projects = [
     {
     title: "Sulamitta Lima - LandingPage Profissional",
     description:
-      "Crítico de Sofá é uma adaptação de um projeto desenvolvido durante um curso de PHP. Trata-se de uma aplicação full stack, totalmente integrada a um banco de dados relacional, onde o usuário pode criar uma conta, avaliar filmes com estrelas e comentários, além de cadastrar seus próprios filmes com pôsteres personalizados. A plataforma conta com uma dashboard para visualizar e gerenciar todos os filmes adicionados, e oferece ao usuário a possibilidade de editar completamente seu perfil, garantindo uma experiência prática, dinâmica e personalizada.",
+      "Desenvolvimento de uma landing page para Sulamita Lima, palestrante e professora com mais de 25 anos de experiência. O projeto teve como foco apresentar seus serviços de palestras e workshops sobre comunicação, autocuidado e desenvolvimento pessoal, com forte direcionamento ao público feminino. A página foi criada com um design profissional e acolhedor, priorizando clareza, credibilidade e conversão, fortalecendo a presença digital e a marca pessoal da palestrante.",
     technologies: ["JAVASCRIPT", "HTML", "CSS"],
     date: { month: "Dezembro", year: "2025" },
     videoUrl: "/assets/1016.mp4",

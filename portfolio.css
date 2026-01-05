@@ -120,6 +120,17 @@ body {
     transition: 0.2s;
 }
 
+.viewAll {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    border-bottom: 1px solid white; 
+}
+.viewAll:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
 .projects-section,
 .academic-section,
 .about-me-section,
@@ -210,7 +221,7 @@ body {
 
 .title {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 60px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -888,9 +899,11 @@ body {
         height: 100px;
         font-size: 10px;
     }
-    #seta{
+
+    #seta {
         opacity: 0;
     }
+
     .box-socials i {
         font-size: 40px;
     }

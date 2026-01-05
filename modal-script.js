@@ -144,11 +144,25 @@ function updateProjectData(projectData) {
 
 // ===================== ASSOCIA CADA CARD AO PROJETO CORRESPONDENTE =====================
 projectCards.forEach(card => {
+  const index = card.getAttribute('data-index');
+
   card.addEventListener('click', () => {
-    const index = card.getAttribute('data-index');
     if (index !== null && projects[index]) {
       updateProjectData(projects[index]);
       openModal();
     }
   });
+
+  const viewMore = card.querySelector('.view-sevice');
+  if (viewMore) {
+    viewMore.addEventListener('click', (e) => {
+      e.preventDefault();      
+      e.stopPropagation();     
+
+      if (index !== null && projects[index]) {
+        updateProjectData(projects[index]);
+        openModal();
+      }
+    });
+  }
 });

@@ -6,7 +6,7 @@ const projects = [
       "Um sistema de gerenciamento de tarefas desenvolvido com as tecnologias mais modernas do mercado. O projeto permite criar, editar e deletar as tarefas, também pode acompanhar a quantidade de tarefas feitas e seu total, foi um projeto da trilha de React que é parceria da Rocketseat e o Porto Digital",
     technologies: ["HTML", "CSS", "TypeScript", "React.js", "TailwindCss"],
     date: { month: "setembro", year: "2025" },
-    videoUrl: "/assets/demostraçãoToDo.mp4",
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/demostra%C3%A7%C3%A3oToDo.mp4",
     githubUrl: "https://github.com/laurindolucas/React-trilha-porto-digital-rocketseat/tree/main/todo"
   },
   {
@@ -15,7 +15,7 @@ const projects = [
       "Site corporativo desenvolvido do zero para uma empresa alemã, com design moderno, responsivo e foco total na experiência do usuário. Apresenta informações institucionais, serviços oferecidos e parceiros estratégicos, além de um canal direto de contato. Construído inteiramente em front-end, com navegação intuitiva e identidade visual profissional.",
     technologies: ["HTML", "CSS", "JavaScript"],
     date: { month: "Agosto", year: "2025" },
-    videoUrl: "/assets/demonstraçãoMGT.mp4",
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/demonstra%C3%A7%C3%A3oMGT.mp4",
     deployUrl: "https://mgt-azure.vercel.app/index.html",
     githubUrl: "https://github.com/laurindolucas/MGT-WEBSITE"
   },
@@ -25,7 +25,7 @@ const projects = [
       "Crítico de Sofá é uma adaptação de um projeto desenvolvido durante um curso de PHP. Trata-se de uma aplicação full stack, totalmente integrada a um banco de dados relacional, onde o usuário pode criar uma conta, avaliar filmes com estrelas e comentários, além de cadastrar seus próprios filmes com pôsteres personalizados. A plataforma conta com uma dashboard para visualizar e gerenciar todos os filmes adicionados, e oferece ao usuário a possibilidade de editar completamente seu perfil, garantindo uma experiência prática, dinâmica e personalizada.",
     technologies: ["PHP", "HTML", "CSS", "MYSQL"],
     date: { month: "Agosto", year: "2025" },
-    videoUrl: "/assets/1016.mp4",
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/1016.mp4",
     githubUrl: "https://github.com/laurindolucas/CriticoDeSofa"
   },
     {
@@ -34,7 +34,7 @@ const projects = [
       "Lotus é um projeto desenvolvido durante a Residência Tecnológica do Porto Digital. Trata-se de uma plataforma criada para apoiar mulheres que convivem com a endometriose no Brasil, oferecendo ferramentas que auxiliam no acompanhamento do tratamento, no acesso à informação e no fortalecimento da rede de apoio durante toda a jornada de cuidado.",
     technologies: ["REACT", "TYPESCRIPT", "SUPABASE", "LOVABLE"],
     date: { month: "Novembro", year: "2025" },
-    videoUrl: "/assets/lotusvideo.mp4",
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/lotusvideo.mp4",
     deployUrl: "https://mgt-azure.vercel.app/index.html",
     githubUrl: "https://github.com/laurindolucas/lotus"
   },
@@ -44,7 +44,7 @@ const projects = [
       "Desenvolvimento de uma landing page para Sulamita Lima, palestrante e professora com mais de 25 anos de experiência. O projeto teve como foco apresentar seus serviços de palestras e workshops sobre comunicação, autocuidado e desenvolvimento pessoal, com forte direcionamento ao público feminino. A página foi criada com um design profissional e acolhedor, priorizando clareza, credibilidade e conversão, fortalecendo a presença digital e a marca pessoal da palestrante.",
     technologies: ["JAVASCRIPT", "HTML", "CSS"],
     date: { month: "Dezembro", year: "2025" },
-    videoUrl: "/assets/videosulamitta.mp4",
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/videosulamitta.mp4",
     deployUrl: "https://sulamittalima.vercel.app/",
     githubUrl: "https://github.com/laurindolucas/Sulamita-Lima-Landing-Page"
   },
@@ -54,7 +54,7 @@ const projects = [
       "Busca Clima foi o projeto final do curso de Full Stack da Infinity School. A aplicação consome duas APIs: uma responsável por obter os dados de localização a partir do CEP informado e outra que, com base nesse CEP, fornece informações sobre o clima da região. A plataforma permite o histórico de buscas realizadas pelo usuário, além da funcionalidade de favoritar locais para acompanhamento rápido das condições climáticas.",
     technologies: ["JAVASCRIPT", "HTML", "CSS", "VIACEP-API", "WEATHER-API"],
     date: { month: "Julho", year: "2025" },
-    videoUrl: "/assets/buscaclimavideo.mp4",
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/buscaclimavideo.mp4",
     deployUrl: "https://busca-tempo-eight.vercel.app/",
     githubUrl: "https://github.com/laurindolucas/BuscaTempo-"
   }

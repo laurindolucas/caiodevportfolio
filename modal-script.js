@@ -34,7 +34,7 @@ const projects = [
       "Lotus é um projeto desenvolvido durante a Residência Tecnológica do Porto Digital. Trata-se de uma plataforma criada para apoiar mulheres que convivem com a endometriose no Brasil, oferecendo ferramentas que auxiliam no acompanhamento do tratamento, no acesso à informação e no fortalecimento da rede de apoio durante toda a jornada de cuidado.",
     technologies: ["REACT", "TYPESCRIPT", "SUPABASE", "LOVABLE"],
     date: { month: "Novembro", year: "2025" },
-    videoUrl: "/assets/1016.mp4",
+    videoUrl: "/assets/lotusvideo.mp4",
     deployUrl: "https://mgt-azure.vercel.app/index.html",
     githubUrl: "https://github.com/laurindolucas/lotus"
   },
@@ -44,7 +44,7 @@ const projects = [
       "Desenvolvimento de uma landing page para Sulamita Lima, palestrante e professora com mais de 25 anos de experiência. O projeto teve como foco apresentar seus serviços de palestras e workshops sobre comunicação, autocuidado e desenvolvimento pessoal, com forte direcionamento ao público feminino. A página foi criada com um design profissional e acolhedor, priorizando clareza, credibilidade e conversão, fortalecendo a presença digital e a marca pessoal da palestrante.",
     technologies: ["JAVASCRIPT", "HTML", "CSS"],
     date: { month: "Dezembro", year: "2025" },
-    videoUrl: "/assets/1016.mp4",
+    videoUrl: "/assets/videosulamitta.mp4",
     deployUrl: "https://sulamittalima.vercel.app/",
     githubUrl: "https://github.com/laurindolucas/Sulamita-Lima-Landing-Page"
   },
@@ -54,7 +54,7 @@ const projects = [
       "Busca Clima foi o projeto final do curso de Full Stack da Infinity School. A aplicação consome duas APIs: uma responsável por obter os dados de localização a partir do CEP informado e outra que, com base nesse CEP, fornece informações sobre o clima da região. A plataforma permite o histórico de buscas realizadas pelo usuário, além da funcionalidade de favoritar locais para acompanhamento rápido das condições climáticas.",
     technologies: ["JAVASCRIPT", "HTML", "CSS", "VIACEP-API", "WEATHER-API"],
     date: { month: "Julho", year: "2025" },
-    videoUrl: "/assets/1016.mp4",
+    videoUrl: "/assets/buscaclimavideo.mp4",
     deployUrl: "https://busca-tempo-eight.vercel.app/",
     githubUrl: "https://github.com/laurindolucas/BuscaTempo-"
   }

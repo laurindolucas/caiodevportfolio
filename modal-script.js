@@ -57,6 +57,15 @@ const projects = [
     videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/buscaclimavideo.mp4",
     deployUrl: "https://busca-tempo-eight.vercel.app/",
     githubUrl: "https://github.com/laurindolucas/BuscaTempo-"
+  },
+    {
+    title: "Gerenciador de Estacionamento - Sistema para gerenciar estacionamento",
+    description:
+      "Sistema desenvolvido para gerenciar estacionamento de veículos em um estabelecimento comercial. O projeto foi criado com o objetivo de otimizar o processo de entrada e saída de veículos, permitindo a configuração de estacionamentos novos, criação e gerenciamento de vagas, registro de horários e geração de relatórios sobre o uso do estacionamento.",
+    technologies: ["PYTHON", "STREAMLIT", "SUPABASE", "POSTGRESQL"],
+    date: { month: "Julho", year: "2025" },
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/sistemaEstacionamento.mp4z",
+    githubUrl: "https://github.com/laurindolucas/gerenciador-vagas-com-streamlit.git"
   }
 ];
 

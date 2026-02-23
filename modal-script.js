@@ -66,6 +66,15 @@ const projects = [
     date: { month: "Julho", year: "2025" },
     videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/sistemaEstacionamento.mp4z",
     githubUrl: "https://github.com/laurindolucas/gerenciador-vagas-com-streamlit.git"
+  }, 
+   {
+    title: "Gerador de QrCode - Sistema para gerar QrCode",
+    description:
+      "Sistema desenvolvido para gerar qrcode com base em link anexado de forma rápida, segura e gratuita!",
+    technologies: ["PYTHON", "FLASK", "HTML", "CSS"],
+    date: { month: "Fevereiro", year: "2026" },
+    videoUrl: "https://y6ju2nnhmmar8i0j.public.blob.vercel-storage.com/Grava%C3%A7%C3%A3o%20de%20Tela%202026-02-21%20125700.mp4",
+    githubUrl: "https://github.com/laurindolucas/gerador_qrcode"
   }
 ];
 

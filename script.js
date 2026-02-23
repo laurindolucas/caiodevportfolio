@@ -66,7 +66,7 @@ fadeElements.forEach(el => observer.observe(el));
 
   const botao = document.getElementById('btn-cv');
   botao.addEventListener('click', () => {
-    baixarArquivo('assets/CV-CaioLaurindo.pdf', 'CV-CaioLaurindo.pdf');
+    baixarArquivo('assets/cv-caioLaurindo.pdf', 'cv-caioLaurindo.pdf');
   });
 
     function abrirRedeSocial(url) {
